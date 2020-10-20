@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HZJC+CMzxY/nLG7DkGgDAzT949UmvhCrSZpOPT3aqZta+9zjtFD5Qo7x7OJx6K1sa4jvNC06pBa+apHVX0UcOQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\angel\\source\\repos\\SREInterview\\SREInterview\\SREInterview.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\angel\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "4/AYMdvUrRgCuPRgh7UfWJ3swjbpBUHT7B7h4YNdtSAZdE8+G2OlRvOFfzgB/TguB9VkW4TiBh0iI+LsznRm2Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\angel\\source\\repos\\SREInterview\\StockService\\StockService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\angel\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

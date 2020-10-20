@@ -1,0 +1,9 @@
+C:\Users\angel\source\repos\SREInterview\StockService\bin\Debug\netstandard2.0\StockService.deps.json
+C:\Users\angel\source\repos\SREInterview\StockService\bin\Debug\netstandard2.0\StockService.dll
+C:\Users\angel\source\repos\SREInterview\StockService\obj\Debug\netstandard2.0\StockService.csprojAssemblyReference.cache
+C:\Users\angel\source\repos\SREInterview\StockService\obj\Debug\netstandard2.0\StockService.AssemblyInfoInputs.cache
+C:\Users\angel\source\repos\SREInterview\StockService\obj\Debug\netstandard2.0\StockService.AssemblyInfo.cs
+C:\Users\angel\source\repos\SREInterview\StockService\bin\Debug\netstandard2.0\StockService.pdb
+C:\Users\angel\source\repos\SREInterview\StockService\obj\Debug\netstandard2.0\StockService.csproj.CoreCompileInputs.cache
+C:\Users\angel\source\repos\SREInterview\StockService\obj\Debug\netstandard2.0\StockService.dll
+C:\Users\angel\source\repos\SREInterview\StockService\obj\Debug\netstandard2.0\StockService.pdb
