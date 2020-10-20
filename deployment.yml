@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: forgerockinterview-container1
-        image: angelinedai/interviewfinal
+        image: angelinedai/sreinterview
         resources:
           limits:
             cpu: 500m

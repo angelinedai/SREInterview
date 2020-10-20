@@ -5,21 +5,21 @@ ARG BUILDCONFIG=RELEASE
 COPY ./StockService/StockService.csproj ./StockService/
 RUN dotnet restore ./StockService/
 
-COPY ./ForgeRock/ForgeRock.csproj ./ForgeRock/
-RUN dotnet restore ./ForgeRock/
+COPY ./SREInterview/SREInterview.csproj ./SREInterview/
+RUN dotnet restore ./SREInterview/
 
 COPY ./StockService/ ./StockService/
 RUN dotnet build ./StockService/
 
-COPY ./ForgeRock/ ./ForgeRock/
-RUN dotnet build ./ForgeRock/
+COPY ./SREInterview/ ./SREInterview/
+RUN dotnet build ./SREInterview/
 
 FROM build AS publish
-RUN dotnet publish ./ForgeRock/ForgeRock.csproj -c $BUILDCONFIG -o /apps --configuration Release
+RUN dotnet publish ./SREInterview/SREInterview.csproj -c $BUILDCONFIG -o /apps --configuration Release
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /apps
 
 COPY --from=publish /apps .
 
-ENTRYPOINT ["dotnet", "ForgeRock.dll"]
+ENTRYPOINT ["dotnet", "SREInterview.dll"]
