@@ -11,7 +11,7 @@ using Microsoft.Extensions.Options;
 
 namespace SREInterview.Controllers
 {
-    [Route("api/StockPriceController")]
+    [Route("api/StockPrice")]
     [ApiController]
     public class StockPriceController : ControllerBase
     {
@@ -27,7 +27,10 @@ namespace SREInterview.Controllers
         [HttpGet("symbol/{symbol}/nday/{nDay}")]
         public string Get(string symbol, int nDay)
         {
-            var apiKey = @"C227WD9W3LUVKVV9";
+            var apiKey = _appSettings.Value.ApiKeyFromAppsettings;
+            if (!string.IsNullOrEmpty(_appSettings.Value.SymbolFromKubernetesEnv))
+                apiKey = _appSettings.Value.ApiKeyFromKubernetesEnv;
+
             var result = _stockService.GetStockPrice(symbol, nDay, apiKey);
 
             return result;
