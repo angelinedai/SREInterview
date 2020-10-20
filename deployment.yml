@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: forgerockinterview-deployment
+spec:
+  selector:
+    matchLabels:
+      app: forgerockinterview-pod
+  template:
+    metadata:
+      labels:
+        app: forgerockinterview-pod
+    spec:
+      containers:
+      - name: forgerockinterview-container1
+        image: angelinedai/interviewfinal
+        resources:
+          limits:
+            cpu: 500m
+            memory: 0.5Gi
+          requests:
+            cpu: 100m
+            memory: 0.5Gi
+        env:
+        - name: SymbolFromKubernetesEnv
+          valueFrom:
+            configMapKeyRef:
+              name: forgerockinterview-configmap
+              key: SymbolFromKubernetesEnv
+        - name: NDayFromKubernetesEnv
+          valueFrom:
+            configMapKeyRef:
+              name: forgerockinterview-configmap
+              key: NDayFromKubernetesEnv
+        - name: ApiKeyFromKubernetesEnv
+          valueFrom:
+            secretKeyRef:
+              name: secret-forgerockinterview
+              key: ApiKeyFromKubernetesEnv
